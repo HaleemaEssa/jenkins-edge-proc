@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-import pika, sys, os
 import datetime
 from datetime import datetime
 import time
@@ -31,5 +30,4 @@ dff['Humidity']=dff['Humidity'].round(0).astype('int')
 dff['Temperature']=dff['Temperature'].round(0).astype('int')
 print(dff)
 dff.to_csv('/data/data1.csv') #, index=False)
-        //dff.flush
 dff.close
