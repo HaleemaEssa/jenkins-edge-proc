@@ -7,3 +7,4 @@ RUN apt-get clean
 ##########
 RUN pip3 install pandas
 CMD ["p.py"]
+ENTRYPOINT ["python3"]
