@@ -23,7 +23,7 @@ pipeline {
     stage('runimage') {
          
             steps {
-                sh 'docker run -v "${PWD}:/data" -t haleema/docker-edge' 
+                sh 'docker run -v "${PWD}:/data" -t haleema/docker-edge3' 
             }
          }    
     }
