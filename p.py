@@ -1,10 +1,10 @@
+#!/usr/bin/env python
 import pika, sys, os
 import datetime
 from datetime import datetime
 import time
 import csv
 import pandas
-logging.basicConfig()
 from csv import reader
 import pandas as pd
 df=pd.read_csv("/data/data.csv")
