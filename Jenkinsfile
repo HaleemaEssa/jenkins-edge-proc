@@ -5,7 +5,8 @@ pipeline {
     }
   
   stages {
-      
+          agent any 
+
     stage('Login to Dockerhub') {
 
            steps {
@@ -13,6 +14,8 @@ pipeline {
             }
         } 
 stage('On-Edge2') {
+      agent any 
+
   steps {
             sh 'echo "edge3"'
             git branch: 'main', url: 'https://github.com/HaleemaEssa/jenkins-edge3.git'
