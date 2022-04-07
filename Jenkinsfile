@@ -1,4 +1,5 @@
 pipeline {
+  agent any
   environment {
         DOCKERHUB_CREDENTIALS=credentials('haleema-dockerhub')
     }
@@ -6,15 +7,12 @@ pipeline {
   stages {
       
     stage('Login to Dockerhub') {
-        agent any
 
            steps {
                 sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
             }
         } 
 stage('On-Edge2') {
-  agent any
-
   steps {
             sh 'echo "edge3"'
             git branch: 'main', url: 'https://github.com/HaleemaEssa/jenkins-edge3.git'
