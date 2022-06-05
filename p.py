@@ -10,7 +10,7 @@ from csv import reader
 #df-d.drop_duplicates(subset=None,inplace=True)
 import pandas as pdd
 dfd=pdd.read_csv("/data/data.csv")
-dfd.drop_duplicates(subset=None,keep='first',inplace=True)
+dfd.drop_duplicates(subset=None,inplace=True)
 dfd.to_csv("/data/data.csv")
 import pandas as pd
 df=pd.read_csv("/data/data.csv")
