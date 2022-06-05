@@ -5,11 +5,11 @@ import time
 import csv
 import pandas
 from csv import reader
-import pandas as pd-d
+#import pandas as pd-d
 #df-d= pd-d.read_csv("/data/data.csv", sep="\t or ,")
 #df-d.drop_duplicates(subset=None,inplace=True)
-import pandas as pd-d
-dfd=pd-d.read_csv("/data/data.csv")
+import pandas as pdd
+dfd=pdd.read_csv("/data/data.csv")
 dfd.drop_duplicates(subset=None,keep='first',inplace=True)
 dfd.to_csv("/data/data.csv")
 import pandas as pd
