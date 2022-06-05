@@ -5,8 +5,12 @@ import time
 import csv
 import pandas
 from csv import reader
+#import pandas as pd-d
+#df-d= pd-d.read_csv("/data/data.csv", sep="\t or ,")
+#df-d.drop_duplicates(subset=None,inplace=True)
 import pandas as pd
 df=pd.read_csv("/data/data.csv")
+df.drop_duplicates(subset=None,inplace=True)
 #headerList = ['Date','Sound','Flame','Humidity','Temperature']
 df['Date']=pd.to_datetime(df['Date'])
 print (type(df['Date'][0]))
