@@ -11,6 +11,7 @@ from csv import reader
 import pandas as pd
 df=pd.read_csv("/data/data.csv")
 df.drop_duplicates(subset=None,keep='first',inplace=True)
+df.to_csv("/data/data.csv")
 #headerList = ['Date','Sound','Flame','Humidity','Temperature']
 df['Date']=pd.to_datetime(df['Date'])
 print (type(df['Date'][0]))
