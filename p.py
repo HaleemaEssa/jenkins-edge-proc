@@ -8,10 +8,10 @@ from csv import reader
 #import pandas as pd-d
 #df-d= pd-d.read_csv("/data/data.csv", sep="\t or ,")
 #df-d.drop_duplicates(subset=None,keep='first',inplace=False)
-import pandas as pdd
-dfd=pdd.read_csv("/data/data.csv")
-dfd.drop_duplicates(subset=None,inplace=True)
-dfd.to_csv("/data/data.csv")
+#import pandas as pdd
+#dfd=pdd.read_csv("/data/data.csv")
+#dfd.drop_duplicates(subset=None,inplace=True)
+#dfd.to_csv("/data/data.csv")
 import pandas as pd
 df=pd.read_csv("/data/data.csv")
 #headerList = ['Date','Sound','Flame','Humidity','Temperature']
