@@ -37,6 +37,6 @@ dff['Flame']=dff['Flame'].apply(np.ceil) #().astype('int')
 dff['Flame']=dff['Flame'].astype('int')
 dff['Humidity']=dff['Humidity'].round(0).astype('int')
 dff['Temperature']=dff['Temperature'].round(0).astype('int')
-print(dff)
 dff.to_csv('/data/data1.csv') #, index=False)
+print(dff)
 #dff.close
