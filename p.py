@@ -18,6 +18,8 @@ df=pd.read_csv("/data/data.csv")
 #headerList = ['Date','Sound','Flame','Humidity','Temperature']
 df['Date']=pd.to_datetime(df['Date'])
 print (type(df['Date'][0]))
+##12-3-2023##
+df.to_csv("/data/index-data.csv")
 print(df)
 df.set_index('Date', inplace=True)
 import numpy as np
@@ -25,6 +27,8 @@ df=df.replace({'Humidity':'0', 'Temperature':'0'},np.NaN)
 df=df.interpolate()
 df3=df.pivot_table(index=pd.Grouper(freq='T')) #.agg({'Sound':'sum','Flame':'sum'}) #,columns=['Humidity','Temperature']) #/// freq=S,T,h,M,Y
 #        df3 = df3[['Date','Sound','Flame','Humidity','Temperature']] #[['mean', '0', '1', '2', '3']]
+##12-3-2023##
+df3.to_csv("/data/pivot_data.csv")
 print(df3)
 dff = df3.reindex(columns=['Sound','Flame','Humidity','Temperature'])
 #        dff.columns = pd.Index([0], dtype='int64')
